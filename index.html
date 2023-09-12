@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+    </style>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Space Mono', monospace;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            font-size:100%;
+
+        }
+        .log{
+            width: 50%;
+            height: 100%;
+            border: none;
+            position: absolute;
+            top:0;
+            background-color: #1e1e1e;
+            padding: 10% 0 0 0;
+            box-sizing: border-box;
+            font-size: 24px;
+            color:white;
+            vertical-align: middle;
+            overflow-y:scroll;
+            resize:horizontal;
+            max-width: 70%;
+            min-width: 10%;
+
+
+
+        }
+        .data{
+            width: 100%;
+            box-shadow: 0px 4px 0px rgba(0, 0, 0, 1);
+            border: none;
+            height: 48px;
+            padding: 4px 16px;
+            box-sizing: border-box;
+            font-size: 16px;            
+        }
+        .data:focus{
+            outline: none;
+            background-color: black;
+            color:white
+        }
+        .var:focus{
+            background-color: rgb(34, 34, 34) !important;
+        }
+        .txt{
+            font-size: 24px;
+
+        }
+        .left{
+            position: absolute;
+            left: 50%;
+            padding-left: 10px;
+            box-sizing: border-box;
+            width: 50%;
+            background-color: rgb(217, 217, 217);
+            height: 100%;
+            text-overflow: ellipsis;
+            
+        }
+    </style>
+    <link rel="shortcut icon" href="https://static.vecteezy.com/ti/vetor-gratis/p3/12049205-polvo-verde-bonito-andando-ilustracao-animal-isolada-dos-desenhos-animados-de-logotipo-premium-de-design-de-icone-de-adesivo-de-estilo-simples-personagem-mascote-vetor.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="left">
+        <div class="variable_area">
+            <p class="txt">variables</p>
+            <textarea type="text" class="data var" index="2" placeholder="put your varables separeted by //"></textarea>
+        </div>
+        <p class="txt">prefix</p>
+        <input type="text" name="prefix" index="0" class="data">
+        <p class="txt">sufixo</p>
+        <input type="text" name="posfix" index="1" class="data">
+    </div>
+
+    
+    <div  class="log"></div>
+    <script src="script.js"></script>
+</body>
+</html>
